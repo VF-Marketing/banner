@@ -1,0 +1,71 @@
+<svg width="300" height="250" viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shadeA" x1="150" y1="0" x2="150" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C0818" stop-opacity="0.14"/>
+      <stop offset="0.28" stop-color="#0C0818" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#0C0818" stop-opacity="0.84"/>
+    </linearGradient>
+    <linearGradient id="shadeB" x1="0" y1="125" x2="300" y2="125" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0814" stop-opacity="0.78"/>
+      <stop offset="0.52" stop-color="#0A0814" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#0A0814" stop-opacity="0.18"/>
+    </linearGradient>
+    <radialGradient id="glowOrange" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(84 74) rotate(90) scale(72)">
+      <stop stop-color="white" stop-opacity="0.56"/>
+      <stop offset="0.38" stop-color="white" stop-opacity="0.22"/>
+      <stop offset="0.68" stop-color="#FFC459" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowPink" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(46 42) rotate(90) scale(76)">
+      <stop stop-color="#FF76C0" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#FF76C0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowPurple" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(262 198) rotate(90) scale(96)">
+      <stop stop-color="#954FFF" stop-opacity="0.44"/>
+      <stop offset="1" stop-color="#954FFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ctaFill" x1="72" y1="194" x2="72" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF9F43"/>
+      <stop offset="1" stop-color="#FF7B20"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-24" y="-24" width="348" height="298" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#0A0814" flood-opacity="0.24"/>
+    </filter>
+    <filter id="boxShadow" x="144" y="124" width="126" height="62" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#281048" flood-opacity="0.34"/>
+    </filter>
+    <filter id="logoShadow" x="208" y="8" width="86" height="86" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#140812" flood-opacity="0.3"/>
+    </filter>
+    <clipPath id="clip">
+      <rect x="1" y="1" width="298" height="248" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#cardShadow)">
+    <rect x="1" y="1" width="298" height="248" rx="18" fill="#100D1F" stroke="rgba(255,255,255,0.18)"/>
+  </g>
+
+  <g clip-path="url(#clip)">
+    <image href="assets/img/shibuya-crossing.jpg" x="-10" y="-12" width="324" height="280" preserveAspectRatio="xMidYMid slice"/>
+    <rect x="1" y="1" width="298" height="248" fill="url(#shadeA)"/>
+    <rect x="1" y="1" width="298" height="248" fill="url(#shadeB)"/>
+    <circle cx="46" cy="42" r="76" fill="url(#glowPink)"/>
+    <circle cx="262" cy="198" r="96" fill="url(#glowPurple)"/>
+    <circle cx="84" cy="74" r="72" fill="url(#glowOrange)"/>
+  </g>
+
+  <g fill="#FFFFFF">
+    <text x="20" y="197" font-family="'Cormorant Garamond', Georgia, serif" font-size="35" font-weight="600">Oplev Japan</text>
+    <text x="20" y="216" font-family="Manrope, Arial, sans-serif" font-size="11" fill-opacity="0.88">På en grupperejse med</text>
+    <text x="20" y="231" font-family="Manrope, Arial, sans-serif" font-size="11" fill-opacity="0.88">dansktalende rejseleder</text>
+  </g>
+
+  <g filter="url(#logoShadow)">
+    <circle cx="251" cy="46" r="32" fill="#42203A" fill-opacity="0.92"/>
+    <image href="assets/img/vf-logo-white.png" x="230" y="25" width="42" height="42" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+
+  <rect x="20" y="200" width="82" height="32" rx="16" fill="url(#ctaFill)" stroke="rgba(255,186,120,0.38)"/>
+  <text x="61" y="220" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Se rejser</text>
+</svg>

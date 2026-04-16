@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Banner Preview</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4efe9;
+      --card: rgba(255, 255, 255, 0.8);
+      --ink: #2d241f;
+      --muted: #6f6258;
+      --line: rgba(45, 36, 31, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 24px;
+      font-family: Georgia, serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.9), transparent 24%),
+        linear-gradient(135deg, #f7f1eb 0%, #efe6de 52%, #e7ddd6 100%);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--card);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 16px 40px rgba(43, 32, 24, 0.08);
+    }
+
+    .label {
+      margin: 0 0 12px;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+    }
+
+    iframe {
+      display: block;
+      border: 0;
+      background: transparent;
+    }
+
+    .frame-300 {
+      width: 300px;
+      height: 250px;
+    }
+
+    .frame-728 {
+      width: 728px;
+      height: 90px;
+      max-width: 100%;
+    }
+
+    .scroll {
+      overflow-x: auto;
+      padding-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Banner Preview</h1>
+  <p>Begge formater samlet på én side.</p>
+
+  <div class="grid">
+    <section class="card">
+      <h2 class="label">300x250</h2>
+      <iframe class="frame-300" src="index.html" title="300x250 banner"></iframe>
+    </section>
+
+    <section class="card">
+      <h2 class="label">728x90</h2>
+      <div class="scroll">
+        <iframe class="frame-728" src="728x90/index.html" title="728x90 banner"></iframe>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
