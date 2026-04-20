@@ -263,7 +263,7 @@ body {
   height: var(--cta-height);
   margin-top: 4px;
   padding: 0 10px;
-  border: 1px solid rgba(255, 186, 120, 0.38);
+  border: 0;
   border-radius: 999px;
   background: linear-gradient(180deg, #ff9f43 0%, #ff7b20 100%);
   backdrop-filter: blur(8px);
@@ -271,7 +271,7 @@ body {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.01em;
-  box-shadow: 0 10px 20px rgba(255, 122, 31, 0.3), inset 0 1px 0 rgba(255, 233, 204, 0.42);
+  box-shadow: none;
   transition: transform 220ms ease, background-color 220ms ease, color 220ms ease, border-color 220ms ease;
   white-space: nowrap;
   width: fit-content;
@@ -282,7 +282,6 @@ body {
   transform: translateY(-1px);
   background: linear-gradient(180deg, #ffab55 0%, #ff852d 100%);
   color: #ffffff;
-  border-color: rgba(255, 210, 168, 0.52);
 }
 
 .banner:focus-visible {
