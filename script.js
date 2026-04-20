@@ -6,7 +6,6 @@
     : "https://example.com";
 
   var banner = document.getElementById("banner");
-  var video = document.getElementById("bgVideo");
 
   if (!banner) {
     return;
@@ -25,22 +24,4 @@
     logoSwapped = !logoSwapped;
     banner.classList.toggle("is-logo-swapped", logoSwapped);
   }, 3000);
-
-  if (!video) {
-    return;
-  }
-
-  var markVideoReady = function () {
-    banner.classList.add("is-video-ready");
-  };
-
-  video.addEventListener("loadeddata", markVideoReady, { once: true });
-  video.addEventListener("canplay", markVideoReady, { once: true });
-
-  var playPromise = video.play();
-  if (playPromise && typeof playPromise.then === "function") {
-    playPromise.then(markVideoReady).catch(function () {
-      banner.classList.remove("is-video-ready");
-    });
-  }
 })();

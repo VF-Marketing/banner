@@ -44,7 +44,6 @@ body {
 
 .media,
 .media__video,
-.media__image,
 .media__glow,
 .media__grain,
 .media__shade,
@@ -53,37 +52,17 @@ body {
   inset: 0;
 }
 
-.media__video,
-.media__image {
+.media__video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.media__video,
-.media__image {
+.media__video {
   z-index: 1;
   transform: scale(1.04);
   animation: cityPan 16s ease-in-out infinite alternate;
   transform-origin: center center;
-}
-
-.media__video {
-  opacity: 0;
-  transition: opacity 500ms ease;
-}
-
-.banner.is-video-ready .media__video {
-  opacity: 1;
-}
-
-.media__image--poster {
-  transition: opacity 500ms ease;
-}
-
-.banner.is-video-ready .media__image--poster {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .media__glow {
@@ -327,7 +306,6 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .media__video,
-  .media__image,
   .media__glow,
   .banner.is-animated .logo-bubble,
   .banner.is-animated .content h1,
